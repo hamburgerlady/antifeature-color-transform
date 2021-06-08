@@ -1,4 +1,4 @@
-function [im2t,poly21,R21,A21]=color_correct(im1,im2)
+function [im2t,T]=color_correct(im1,im2)
 
 
 im1 = double(im1);
@@ -102,5 +102,11 @@ im2ta(im2ta>1)=1;
 
 im2t = (im2ta*M1+m1);
 
+T.poly = poly21;
+T.R = R21;
+T.A = A21;
+T.M = M1;
+T.m = m1;
+T.rev = rev;
 
 
