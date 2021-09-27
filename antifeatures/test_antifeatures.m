@@ -6,6 +6,7 @@ im = im/max(im(:));
 imgr = repmat(max(im,[],3),[1 1 3]);
 
 [M,N,~] = size(im);
+J = im2str_tensor(im);
 
 %% features
 ff1 = J2feat(J);

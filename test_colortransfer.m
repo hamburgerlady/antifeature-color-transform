@@ -19,9 +19,9 @@ disp(['SSIM (polynomial): '  num2str(ssim(im1,uint8(im2t)))])
 
 
 im1c = im1;
-for iii = 1:20
-    i0 = randi(500);
-    j0 = randi(300);
+for iii = 1:50
+    i0 = randi(550)-1;
+    j0 = randi(350)-1;
     im1c(i0+(1:50),j0+(1:50),:) = uint8(repmat(rand(1,1,3)*255,[50 50 1]));
 end
 
